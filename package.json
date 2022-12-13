@@ -6,7 +6,6 @@
   "scripts": {
     "start": "nodemon",
     "build": "tsc",
-    "test:prepper":"npx db-migrate up -e test",
     "test": "export NODE_ENV=test && tsc && npx db-migrate up -e test && jasmine &&  db-migrate down -e test",
     "test:windows":"set NODE_ENV=test && tsc && npx db-migrate up -e test && jasmine &&  db-migrate down -e test",
     "format": "prettier --write 'src/**/*.ts'",
