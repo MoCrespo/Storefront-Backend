@@ -1,14 +1,14 @@
 /* eslint-disable */
-import { DisplayProcessor, SpecReporter, StacktraceOption } from 'jasmine-spec-reporter'
-import SuiteInfo = jasmine.SuiteInfo
+import { DisplayProcessor, SpecReporter, StacktraceOption } from 'jasmine-spec-reporter';
+import SuiteInfo = jasmine.SuiteInfo;
 
 class CustomProcessor extends DisplayProcessor {
   public displayJasmineStarted(info: SuiteInfo, log: string): string {
-    return `${log}`
+    return `${log}`;
   }
 }
 
-jasmine.getEnv().clearReporters()
+jasmine.getEnv().clearReporters();
 jasmine.getEnv().addReporter(
   new SpecReporter({
     suite: {
@@ -19,4 +19,4 @@ jasmine.getEnv().addReporter(
     },
     customProcessors: [CustomProcessor]
   })
-)
+);

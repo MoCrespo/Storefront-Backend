@@ -29,13 +29,18 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 #### User
 - id
+- username 
 - firstName
 - lastName
 - password
 
 #### Orders
 - id
-- id of each product in the order
-- quantity of each product in the order
 - user_id
 - status of order (active or complete)
+
+#### order_products
+- id
+- id of each product in the order
+- id of each orders
+- quantity of each prodcut in the order

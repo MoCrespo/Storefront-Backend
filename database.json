@@ -1,4 +1,7 @@
 {
+  "sql-file" : true,
+  "defaultEnv": {"ENV": "NODE_ENV"},
+ 
     "dev": {
       "driver": "pg",
       "host": {"ENV":"POSTGRES_HOST"},
@@ -7,12 +10,12 @@
       "user": {"ENV":"POSTGRES_USER"},
       "password": {"ENV":"POSTGRES_PASSWORD"}
     },
-    "sql-file" : true,
+
     "test": {
       "driver": "pg",
       "host": {"ENV":"POSTGRES_HOST"},
       "port":{"ENV":"POSTGRES_PORT"},
-      "database": {"ENV":"POSTGRES_TEST_DB"},
+      "database": {"ENV":"POSTGRES_DB_TEST"},
       "user": {"ENV":"POSTGRES_USER"},
       "password": {"ENV":"POSTGRES_PASSWORD"}
     }
