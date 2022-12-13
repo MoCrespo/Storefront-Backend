@@ -110,3 +110,7 @@ npm run build
 To run the project must have this technologies:
 - docker-compose to run the database
 - Node for the application logic
+
+## REQUIREMENTS
+
+- [REQUIREMENTS](/REQUIREMENTS.md)
