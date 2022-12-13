@@ -1,10 +1,9 @@
 import client from '../database';
-import { Cart,  CreateCartDTO } from './types/cart.types';
+import { Cart, CreateCartDTO } from './types/cart.types';
 import { Order, CreateOrderDTO, UpdateOrderDTO } from './types/orders.types';
 
 export class OrderStore {
-
-  async addProduct(c:CreateCartDTO): Promise<Cart> {
+  async addProduct(c: CreateCartDTO): Promise<Cart> {
     try {
       const conn = await client.connect();
       const sql =

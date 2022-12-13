@@ -5,9 +5,7 @@ import { OrdersService } from '../services/orders.service';
 
 const addProduct = async (req: Request, res: Response) => {
   try {
-    const add = await OrdersService.addProduct(
-      req.body
-    );
+    const add = await OrdersService.addProduct(req.body);
     return res.status(200).send({ statusCode: 200, data: add });
   } catch (err) {
     return res.status(400).send({ statusCode: 400, error: `${err}` });

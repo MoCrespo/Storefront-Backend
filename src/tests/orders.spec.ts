@@ -40,7 +40,6 @@ describe('Order model', () => {
     const o = {
       user_id: 2
     } as Order;
-    
 
     beforeAll(async () => {
       const createUser = await user.create(u);
@@ -86,8 +85,7 @@ describe('Order model', () => {
     it('Update method should return an order with edited', async () => {
       const updateOrder = await order.update(
         {
-          status: 'complete',
-
+          status: 'complete'
         },
         o.id.toString()
       );
